@@ -14,23 +14,6 @@ import javax.swing.*;
 import java.io.IOException;
 
 
-class StarWarsJTable {
-
-    JFrame f;
-
-    public StarWarsJTable(String[][] dataApi){
-        f=new JFrame();
-        String data[][]= dataApi;
-        String column[]={"Nombre","Altura","Nacimiento"};
-        JTable jt=new JTable(data,column);
-        jt.setBounds(30,40,200,300);
-        JScrollPane sp=new JScrollPane(jt);
-        f.add(sp);
-        f.setSize(300,400);
-        f.setVisible(true);
-    }
-}
-
 class Character {
     public String name;
     public String height;
@@ -43,7 +26,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /*CloseableHttpClient httpClient = HttpClients.createDefault();
+        CloseableHttpClient httpClient = HttpClients.createDefault();
 
         try {
 
@@ -64,24 +47,23 @@ public class Main {
                     mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
                     JsonNode node = mapper.readTree(result).at("/results");
 
-                    String [][] data = new String[node.size()][3];
+                    String[][] data = new String[node.size()][3];
 
                     ArrayNode arr_node = (ArrayNode) node;
 
-                    for(int i = 0; i < arr_node.size(); i++) {
+                    for (int i = 0; i < arr_node.size(); i++) {
                         Character c = mapper.readValue(arr_node.get(i).toString(), Character.class);
                         data[i][0] = c.name;
                         data[i][1] = c.height;
                         data[i][2] = c.birth_year;
                     }
-                    new StarWarsJTable(data);
-
                 }
 
             } finally {
                 response.close();
             }
-        } catch (IOException e) {
+        } catch (
+                IOException e) {
             logger.error(e.getMessage());
         } finally {
             try {
@@ -89,6 +71,6 @@ public class Main {
             } catch (IOException e) {
                 logger.error(e.getMessage());
             }
-        }*/
+        }
     }
 }
