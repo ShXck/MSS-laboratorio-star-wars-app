@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8b853845-3c37-4b61-aac2-101289a80a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/gradle.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/gradle.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +190,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616198986086</updated>
-      <workItem from="1616198988780" duration="2653000" />
+      <workItem from="1616198988780" duration="2957000" />
     </task>
     <servers />
   </component>
